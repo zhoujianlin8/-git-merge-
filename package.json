@@ -1,0 +1,22 @@
+{
+  "name": "git-merge",
+  "version": "1.0.6",
+  "description": "git merge branch auth",
+  "bin": {
+    "gm": "./bin.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zhoujianlin8/git-merge.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^7.0.0",
+    "minimist": "^1.2.0"
+  }
+}

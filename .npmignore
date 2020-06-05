@@ -1,0 +1,7 @@
+.editorconfig
+.jshintrc
+node_modules/
+.travis.yml
+*.swp
+.DS_Store
+.idea
