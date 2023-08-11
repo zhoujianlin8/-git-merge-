@@ -21,19 +21,20 @@
 * gm -v
 
 ## gm dev -m 'xx' 举例执行过程
-* git add . && git commit -m 'xx' && git pull origin curbranchxx
-* git add . && git commit -m 'xx' && git push origin curbranchxx
+* git add . && git commit -m 'xx' && git pull origin curbranch
+* git add . && git commit -m 'xx' && git push origin curbranch
 * git checkout dev
 * git add . && git commit -m 'xx' && git pull origin dev 
-* git add . && git commit -m 'xx' && git pull origin curbranchxx
+* git add . && git commit -m 'xx' && git pull origin curbranch
 * git add . && git commit -m 'xx' && git push origin dev
-* git checkout curbranchxx
+* git checkout curbranch
 * 过程中出现异常会提示解决 解决后流程可以点继续
 
 ## gm pp -m 'xx' 举例执行
-* git add . && git commit -m 'xx' && git pull origin curbranchxx
-* git add . && git commit -m 'xx' && git push origin curbranchxx
+* git add . && git commit -m 'xx' && git pull origin curbranch
+* git add . && git commit -m 'xx' && git push origin curbranch
 * 过程中出现异常会提示解决 解决后流程可以点继续
 
 ## 解决问题
 * 自动流程解决合并本地合并分支代码的问题，避免手动执行过程中的遗漏出现问题操作麻烦 ，分支切换执行出现混乱
+

@@ -1,6 +1,6 @@
 {
   "name": "git-merge",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "git merge branch auth",
   "bin": {
     "gm": "./bin.js"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git@github.com:zhoujianlin8/git-merge.git"
   },
-  "author": "",
+  "author": "zhoujianlin",
   "license": "MIT",
   "dependencies": {
     "inquirer": "^7.0.0",

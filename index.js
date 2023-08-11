@@ -4,6 +4,13 @@ async function execLog(str){
     console.log(str);
     return await exec(str)
 }
+function handMessage(message) {
+    message = message || ''
+    if (message.indexOf('"') === -1) {
+        return `"${message}"`
+    }
+    return `'${message}'`
+}
 async function gitPush(obj){
     obj = Object.assign({
         branch: '',
@@ -18,7 +25,7 @@ async function gitPush(obj){
             obj.branch = branch
         }
     }
-    const str = `git add . && git commit -m '${obj.message}'`;
+    const str = `git add . && git commit -m ${handMessage(obj.message)}`;
     try{
         await execLog(str);
     }catch(e){
@@ -63,7 +70,7 @@ async function gitPull(obj){
         }
     }
     try{
-        await execLog(`git add . && git commit -m '${obj.message}'`);
+        await execLog(`git add . && git commit -m ${handMessage(obj.message)}`);
     }catch(e){
         if(e && e.stderr){
             console.error(e.stderr)
